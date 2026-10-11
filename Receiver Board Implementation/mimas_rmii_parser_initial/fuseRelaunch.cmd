@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/tb_packet_parser_isim_beh.exe" -prj "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/tb_packet_parser_beh.prj" "work.tb_packet_parser" "work.glbl" 

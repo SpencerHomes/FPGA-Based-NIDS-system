@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/packet_parser.v" Line 74: Assignment to <arg fmt="%s" index="1">dbg_saw_080045</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 77: Assignment to <arg fmt="%s" index="1">dst_mac</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 78: Assignment to <arg fmt="%s" index="1">ipv4_header_bytes</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 79: Assignment to <arg fmt="%s" index="1">ipv4_total_length</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 80: Assignment to <arg fmt="%s" index="1">ip_protocol</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 81: Assignment to <arg fmt="%s" index="1">ipv4_header_checksum</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 82: Assignment to <arg fmt="%s" index="1">ipv4_identification</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 83: Assignment to <arg fmt="%s" index="1">ecn_field</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 84: Assignment to <arg fmt="%s" index="1">packet_is_udp</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 85: Assignment to <arg fmt="%s" index="1">packet_is_icmp</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 86: Assignment to <arg fmt="%s" index="1">tcp_flags</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 87: Assignment to <arg fmt="%s" index="1">udp_length</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 88: Assignment to <arg fmt="%s" index="1">packet_valid</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 89: Assignment to <arg fmt="%s" index="1">dbg_ipv4_prefix_seen</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 95: Assignment to <arg fmt="%s" index="1">rmii_active_d</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">dst_mac</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">src_mac</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">eth_type</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">ipv4_header_bytes</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">ipv4_total_length</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">dst_ip</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">src_ip</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">ip_protocol</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">ipv4_header_checksum</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">ipv4_identification</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">dscp_field</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">ecn_field</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">ipv4_ttl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">dst_port</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">src_port</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">tcp_flags</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">tcp_header_bytes</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">udp_length</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">icmp_type</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">icmp_code</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">packet_bytes</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">axi_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">offset_nonzero</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">packet_is_udp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">packet_is_icmp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">packet_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">dbg_ipv4_prefix_seen</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_packet_parser</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ipv4_header_bytes_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ipv4_header_bytes_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ipv4_header_bytes_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ipv4_header_bytes_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ipv4_version_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ipv4_version_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ipv4_version_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ipv4_version_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tcp_header_bytes_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tcp_header_bytes_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tcp_header_bytes_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tcp_header_bytes_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">packet_parser</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">preamble_count_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ethernet_rx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/udp_length_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_45</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_44</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_43</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_42</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_40</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_39</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_mac_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_45</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_44</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_43</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_42</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_40</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_39</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_mac_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/eth_type_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_type_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/icmp_code_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_header_bytes_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_header_bytes_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_header_bytes_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_header_bytes_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/tcp_flags_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_port_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_is_icmp</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_is_udp</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_port_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_identification_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_checksum_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_ttl_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dscp_field_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dscp_field_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dscp_field_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dscp_field_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dscp_field_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dscp_field_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/offset_nonzero</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ecn_field_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ecn_field_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ip_protocol_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/src_ip_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dst_ip_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_version_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_version_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_version_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_version_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_bytes_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_bytes_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_bytes_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_bytes_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_header_bytes_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/ipv4_total_length_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/prev_byte_was_08</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/packet_valid</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dbg_ipv4_prefix_seen</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_packet_parser/dbg_saw_0800</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">led_dbg_crs_dv_fall_seen</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_packet_parse</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;u_rmii_rx/dbg_frame_end_seen&gt; </arg>
+</msg>
+
+</messages>
+

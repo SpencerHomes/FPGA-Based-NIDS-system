@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/MimasV2-shared/mimas_rmii_parser_initial/top_packet_parse.ncd
+OUTFILE=/home/ise/MimasV2-shared/mimas_rmii_parser_initial/top_packet_parse.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=/home/ise/MimasV2-shared/mimas_rmii_parser_initial
+LICENSE=WebPack
+USER_INFO=214097265_0_0_077

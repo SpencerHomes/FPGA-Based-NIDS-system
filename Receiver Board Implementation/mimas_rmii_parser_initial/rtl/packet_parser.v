@@ -49,11 +49,10 @@ module packet_parser (
 
 //packet valid
     output reg          packet_valid,
-    output reg  [15:0]  packet_bytes
+    output reg  [15:0]  packet_bytes,
 
-
-
-
+//debug
+	output reg dbg_ipv4_prefix_seen
 
 );
 
@@ -64,6 +63,10 @@ reg [7:0] ipv4_version;
 
 reg [15:0] byte_index;
 
+//debug
+reg prev_byte_was_08;
+reg dbg_saw_0800;
+reg dbg_saw_080045;
 
 wire [15:0] transport_start;
 assign transport_start = 16'd14 + ipv4_header_bytes;
@@ -100,7 +103,11 @@ always @(posedge clk) begin
 
         icmp_code           <=8'd0;
         icmp_type           <=8'd0;
-
+		  
+		  prev_byte_was_08       <= 1'b0;
+		  dbg_ipv4_prefix_seen <= 1'b0;
+		  dbg_saw_0800 <= 1'b0;
+		  dbg_saw_080045 <= 1'b0;
 
     end else begin
         //initially no packets to say valid
@@ -139,10 +146,19 @@ always @(posedge clk) begin
                     icmp_code                <= 8'd0;
             end                
                 
-
-
-
-                //ethernet bullshi
+				//debug stuff	
+				if (prev_byte_was_08 && axi_tdata == 8'h00) begin
+					dbg_saw_0800 <= 1'b1;
+				end
+			
+					prev_byte_was_08 <= (axi_tdata == 8'h08);
+				
+				if (dbg_saw_0800 && axi_tdata == 8'h45) begin
+					dbg_ipv4_prefix_seen <= 1'b1;
+					dbg_saw_080045 <= 1'b1;
+				end
+				
+				    //ethernet bullshi
                 case (byte_index)
 
                     //dst mac
