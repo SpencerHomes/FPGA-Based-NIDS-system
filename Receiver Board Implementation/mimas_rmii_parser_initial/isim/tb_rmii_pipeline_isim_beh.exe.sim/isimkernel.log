@@ -1,0 +1,29 @@
+Command line:
+   tb_rmii_pipeline_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51778
+
+Sun Oct 11 16:10:41 2026
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 196.588 Meg
+
+ Total Signals          : 66
+ Total Nets             : 419
+ Total Signal Drivers   : 51
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 59
+ Total Traceable Variables  : 83
+ Total Scalar Nets and Variables : 1813
+Total Line Count : 373
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 274.186 Meg
+
+Sun Oct 11 16:13:04 2026
+

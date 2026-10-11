@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml top_packet_parse.twx top_packet_parse.ncd -o
+top_packet_parse.twr top_packet_parse.pcf -ucf MimasV2.ucf
+
+Design file:              top_packet_parse.ncd
+Physical constraint file: top_packet_parse.pcf
+Device,package,speed:     xc6slx9,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock rmii_ref_clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rmii_crs_dv |   -0.455(R)|      FAST  |    4.056(R)|      SLOW  |rmii_ref_clk_BUFGP|   0.000|
+rmii_rxd<0> |   -0.905(R)|      FAST  |    3.854(R)|      SLOW  |rmii_ref_clk_BUFGP|   0.000|
+rmii_rxd<1> |   -1.196(R)|      FAST  |    3.906(R)|      SLOW  |rmii_ref_clk_BUFGP|   0.000|
+rst_n       |    0.280(R)|      SLOW  |    4.562(R)|      SLOW  |rmii_ref_clk_BUFGP|   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock rmii_ref_clk to Pad
+------------------------+-----------------+------------+-----------------+------------+------------------+--------+
+                        |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination             |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------------------+-----------------+------------+-----------------+------------+------------------+--------+
+led_dbg_crs_dv_fall_seen|        13.536(R)|      SLOW  |         6.365(R)|      FAST  |rmii_ref_clk_BUFGP|   0.000|
+led_dbg_frame_end_seen  |        13.649(R)|      SLOW  |         6.428(R)|      FAST  |rmii_ref_clk_BUFGP|   0.000|
+led_frame_toggle        |        13.982(R)|      SLOW  |         6.659(R)|      FAST  |rmii_ref_clk_BUFGP|   0.000|
+led_ipv4_seen           |        14.184(R)|      SLOW  |         6.782(R)|      FAST  |rmii_ref_clk_BUFGP|   0.000|
+led_rx_seen             |        13.505(R)|      SLOW  |         6.349(R)|      FAST  |rmii_ref_clk_BUFGP|   0.000|
+led_tcp_seen            |        14.156(R)|      SLOW  |         6.762(R)|      FAST  |rmii_ref_clk_BUFGP|   0.000|
+------------------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock rmii_ref_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+rmii_ref_clk   |    3.725|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Oct 11 17:05:44 2026 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 384 MB
+
+
+

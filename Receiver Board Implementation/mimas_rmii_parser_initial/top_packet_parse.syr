@@ -1,0 +1,959 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Reading design: top_packet_parse.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_packet_parse.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_packet_parse"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg324
+
+---- Source Options
+Top Module Name                    : top_packet_parse
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/rmii_rx.v" into library work
+Parsing module <rmii_rx>.
+Analyzing Verilog file "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/packet_parser.v" into library work
+Parsing module <packet_parser>.
+Analyzing Verilog file "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/ethernet_rx.v" into library work
+Parsing module <ethernet_rx>.
+Analyzing Verilog file "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" into library work
+Parsing module <top_packet_parse>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_packet_parse>.
+
+Elaborating module <rmii_rx>.
+
+Elaborating module <ethernet_rx>.
+
+Elaborating module <packet_parser>.
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/packet_parser.v" Line 74: Assignment to dbg_saw_080045 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 77: Assignment to dst_mac ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 78: Assignment to ipv4_header_bytes ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 79: Assignment to ipv4_total_length ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 80: Assignment to ip_protocol ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 81: Assignment to ipv4_header_checksum ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 82: Assignment to ipv4_identification ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 83: Assignment to ecn_field ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 84: Assignment to packet_is_udp ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 85: Assignment to packet_is_icmp ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 86: Assignment to tcp_flags ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 87: Assignment to udp_length ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 88: Assignment to packet_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 89: Assignment to dbg_ipv4_prefix_seen ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" Line 95: Assignment to rmii_active_d ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_packet_parse>.
+    Related source file is "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v".
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <dst_mac> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <src_mac> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <eth_type> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <ipv4_header_bytes> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <ipv4_total_length> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <dst_ip> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <src_ip> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <ip_protocol> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <ipv4_header_checksum> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <ipv4_identification> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <dscp_field> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <ecn_field> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <ipv4_ttl> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <dst_port> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <src_port> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <tcp_flags> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <tcp_header_bytes> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <udp_length> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <icmp_type> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <icmp_code> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <packet_bytes> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <axi_tready> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <offset_nonzero> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <packet_is_udp> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <packet_is_icmp> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <packet_valid> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/top_packet_parse.v" line 73: Output port <dbg_ipv4_prefix_seen> of the instance <u_packet_parser> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <led_rx_seen>.
+    Found 1-bit register for signal <led_frame_toggle>.
+    Found 1-bit register for signal <led_ipv4_seen>.
+    Found 1-bit register for signal <led_tcp_seen>.
+    Found 1-bit register for signal <led_dbg_crs_dv_fall_seen>.
+    Found 1-bit register for signal <led_dbg_frame_end_seen>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <top_packet_parse> synthesized.
+
+Synthesizing Unit <rmii_rx>.
+    Related source file is "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/rmii_rx.v".
+    Register <crs_dv_d> equivalent to <rx_active> has been removed
+    Found 6-bit register for signal <byte_low>.
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit register for signal <rx_valid>.
+    Found 1-bit register for signal <rx_frame_end>.
+    Found 1-bit register for signal <rx_active>.
+    Found 1-bit register for signal <receiving_data>.
+    Found 1-bit register for signal <dbg_crs_dv_fall_seen>.
+    Found 1-bit register for signal <dbg_frame_end_seen>.
+    Found 2-bit register for signal <dibit_count>.
+    Found finite state machine <FSM_0> for signal <dibit_count>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_1_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <rmii_rx> synthesized.
+
+Synthesizing Unit <ethernet_rx>.
+    Related source file is "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/ethernet_rx.v".
+    Found 4-bit register for signal <preamble_count>.
+    Found 8-bit register for signal <pending_byte>.
+    Found 1-bit register for signal <pending_valid>.
+    Found 8-bit register for signal <axi_tdata>.
+    Found 1-bit register for signal <axi_tlast>.
+    Found 1-bit register for signal <axi_tvalid>.
+    Found 1-bit register for signal <state>.
+    Found 4-bit adder for signal <preamble_count[3]_GND_3_o_add_3_OUT> created at line 32.
+    Found 4-bit comparator greater for signal <preamble_count[3]_GND_3_o_LessThan_3_o> created at line 31
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <ethernet_rx> synthesized.
+
+Synthesizing Unit <packet_parser>.
+    Related source file is "/home/ise/MimasV2-shared/mimas_rmii_parser_initial/rtl/packet_parser.v".
+    Found 16-bit register for signal <packet_bytes>.
+    Found 1-bit register for signal <packet_valid>.
+    Found 8-bit register for signal <ipv4_header_bytes>.
+    Found 1-bit register for signal <is_ipv4>.
+    Found 8-bit register for signal <ipv4_version>.
+    Found 32-bit register for signal <dst_ip>.
+    Found 32-bit register for signal <src_ip>.
+    Found 8-bit register for signal <ip_protocol>.
+    Found 1-bit register for signal <offset_nonzero>.
+    Found 6-bit register for signal <dscp_field>.
+    Found 2-bit register for signal <ecn_field>.
+    Found 8-bit register for signal <ipv4_ttl>.
+    Found 16-bit register for signal <ipv4_header_checksum>.
+    Found 16-bit register for signal <ipv4_identification>.
+    Found 1-bit register for signal <packet_is_tcp>.
+    Found 1-bit register for signal <packet_is_udp>.
+    Found 1-bit register for signal <packet_is_icmp>.
+    Found 16-bit register for signal <dst_port>.
+    Found 16-bit register for signal <src_port>.
+    Found 8-bit register for signal <tcp_flags>.
+    Found 8-bit register for signal <tcp_header_bytes>.
+    Found 16-bit register for signal <udp_length>.
+    Found 8-bit register for signal <icmp_code>.
+    Found 8-bit register for signal <icmp_type>.
+    Found 1-bit register for signal <prev_byte_was_08>.
+    Found 1-bit register for signal <dbg_ipv4_prefix_seen>.
+    Found 1-bit register for signal <dbg_saw_0800>.
+    Found 16-bit register for signal <eth_type>.
+    Found 16-bit register for signal <ipv4_total_length>.
+    Found 48-bit register for signal <dst_mac>.
+    Found 48-bit register for signal <src_mac>.
+    Found 16-bit register for signal <byte_index>.
+    Found 16-bit subtractor for signal <byte_index[15]_transport_start[15]_sub_103_OUT> created at line 250.
+    Found 9-bit adder for signal <n0464[8:0]> created at line 72.
+    Found 16-bit adder for signal <byte_index[15]_GND_4_o_add_149_OUT> created at line 320.
+    Found 8-bit comparator lessequal for signal <n0121> created at line 247
+    Found 16-bit comparator lessequal for signal <n0124> created at line 247
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 385 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  75 Multiplexer(s).
+Unit <packet_parser> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 53
+ 1-bit register                                        : 25
+ 16-bit register                                       : 9
+ 2-bit register                                        : 1
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+ 48-bit register                                       : 2
+ 6-bit register                                        : 2
+ 8-bit register                                        : 11
+# Comparators                                          : 3
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 87
+ 1-bit 2-to-1 multiplexer                              : 16
+ 16-bit 2-to-1 multiplexer                             : 29
+ 2-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 1
+ 48-bit 2-to-1 multiplexer                             : 10
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 20
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ethernet_rx>.
+The following registers are absorbed into counter <preamble_count>: 1 register on signal <preamble_count>.
+Unit <ethernet_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <packet_parser>.
+The following registers are absorbed into counter <byte_index>: 1 register on signal <byte_index>.
+Unit <packet_parser> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 415
+ Flip-Flops                                            : 415
+# Comparators                                          : 3
+ 16-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 86
+ 1-bit 2-to-1 multiplexer                              : 16
+ 16-bit 2-to-1 multiplexer                             : 29
+ 2-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 4
+ 48-bit 2-to-1 multiplexer                             : 10
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 20
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_rmii_rx/FSM_0> on signal <dibit_count[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <ipv4_header_bytes_0> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ipv4_header_bytes_1> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ipv4_header_bytes_6> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ipv4_header_bytes_7> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ipv4_version_4> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ipv4_version_5> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ipv4_version_6> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ipv4_version_7> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tcp_header_bytes_0> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tcp_header_bytes_1> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tcp_header_bytes_6> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tcp_header_bytes_7> (without init value) has a constant value of 0 in block <packet_parser>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <top_packet_parse> ...
+
+Optimizing unit <rmii_rx> ...
+
+Optimizing unit <ethernet_rx> ...
+WARNING:Xst:1710 - FF/Latch <preamble_count_3> (without init value) has a constant value of 0 in block <ethernet_rx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <packet_parser> ...
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/udp_length_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_47> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_46> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_45> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_44> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_43> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_42> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_41> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_40> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_39> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_38> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_37> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_36> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_35> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_34> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_33> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_32> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_31> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_30> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_29> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_28> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_27> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_26> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_25> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_24> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_23> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_22> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_21> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_20> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_19> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_18> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_17> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_16> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_mac_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_47> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_46> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_45> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_44> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_43> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_42> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_41> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_40> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_39> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_38> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_37> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_36> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_35> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_34> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_33> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_32> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_31> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_30> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_29> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_28> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_27> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_26> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_25> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_24> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_23> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_22> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_21> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_20> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_19> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_18> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_17> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_16> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_mac_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/eth_type_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_type_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/icmp_code_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_header_bytes_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_header_bytes_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_header_bytes_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_header_bytes_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/tcp_flags_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_port_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_is_icmp> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_is_udp> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_port_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_identification_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_checksum_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_ttl_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dscp_field_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dscp_field_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dscp_field_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dscp_field_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dscp_field_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dscp_field_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/offset_nonzero> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ecn_field_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ecn_field_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ip_protocol_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_31> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_30> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_29> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_28> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_27> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_26> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_25> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_24> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_23> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_22> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_21> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_20> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_19> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_18> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_17> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_16> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/src_ip_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_31> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_30> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_29> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_28> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_27> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_26> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_25> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_24> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_23> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_22> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_21> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_20> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_19> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_18> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_17> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_16> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dst_ip_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_version_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_version_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_version_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_version_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_bytes_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_bytes_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_bytes_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_bytes_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_header_bytes_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_15> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_14> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_13> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_12> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_11> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_10> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_9> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_8> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_7> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_6> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_5> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_4> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_3> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_2> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_1> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/ipv4_total_length_0> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/prev_byte_was_08> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/packet_valid> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dbg_ipv4_prefix_seen> of sequential type is unconnected in block <top_packet_parse>.
+WARNING:Xst:2677 - Node <u_packet_parser/dbg_saw_0800> of sequential type is unconnected in block <top_packet_parse>.
+INFO:Xst:2261 - The FF/Latch <led_dbg_crs_dv_fall_seen> in Unit <top_packet_parse> is equivalent to the following FF/Latch, which will be removed : <u_rmii_rx/dbg_frame_end_seen> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_packet_parse, actual ratio is 1.
+FlipFlop u_ethernet_rx/axi_tvalid has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 77
+ Flip-Flops                                            : 77
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_packet_parse.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 116
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 15
+#      LUT2                        : 14
+#      LUT3                        : 7
+#      LUT4                        : 10
+#      LUT5                        : 8
+#      LUT6                        : 26
+#      MUXCY                       : 15
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 77
+#      FD                          : 2
+#      FDE                         : 8
+#      FDR                         : 17
+#      FDRE                        : 50
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 4
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              77  out of  11440     0%  
+ Number of Slice LUTs:                   83  out of   5720     1%  
+    Number used as Logic:                83  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    105
+   Number with an unused Flip Flop:      28  out of    105    26%  
+   Number with an unused LUT:            22  out of    105    20%  
+   Number of fully used LUT-FF pairs:    55  out of    105    52%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    200     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+rmii_ref_clk                       | BUFGP                  | 77    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.478ns (Maximum Frequency: 223.314MHz)
+   Minimum input arrival time before clock: 4.721ns
+   Maximum output required time after clock: 4.202ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'rmii_ref_clk'
+  Clock period: 4.478ns (frequency: 223.314MHz)
+  Total number of paths / destination ports: 769 / 152
+-------------------------------------------------------------------------
+Delay:               4.478ns (Levels of Logic = 3)
+  Source:            u_packet_parser/byte_index_11 (FF)
+  Destination:       u_packet_parser/eth_type_15 (FF)
+  Source Clock:      rmii_ref_clk rising
+  Destination Clock: rmii_ref_clk rising
+
+  Data Path: u_packet_parser/byte_index_11 to u_packet_parser/eth_type_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.525   1.196  u_packet_parser/byte_index_11 (u_packet_parser/byte_index_11)
+     LUT5:I0->O            5   0.254   0.949  u_packet_parser/byte_index[15]_GND_4_o_equal_70_o<15>11_SW0 (N8)
+     LUT6:I4->O            9   0.250   0.976  u_packet_parser/byte_index[15]_GND_4_o_equal_3_o<15> (u_packet_parser/byte_index[15]_GND_4_o_equal_3_o)
+     LUT6:I5->O            1   0.254   0.000  u_packet_parser/Mmux_byte_index[15]_eth_type[15]_select_44_OUT21 (u_packet_parser/byte_index[15]_eth_type[15]_select_44_OUT<10>)
+     FDE:D                     0.074          u_packet_parser/eth_type_10
+    ----------------------------------------
+    Total                      4.478ns (1.357ns logic, 3.121ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rmii_ref_clk'
+  Total number of paths / destination ports: 112 / 104
+-------------------------------------------------------------------------
+Offset:              4.721ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       u_rmii_rx/dibit_count_FSM_FFd1 (FF)
+  Destination Clock: rmii_ref_clk rising
+
+  Data Path: rst_n to u_rmii_rx/dibit_count_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.328   0.943  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             45   0.255   1.736  rst_n_inv1_INV_0 (rst_n_inv)
+     FDR:R                     0.459          led_rx_seen
+    ----------------------------------------
+    Total                      4.721ns (2.042ns logic, 2.679ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'rmii_ref_clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            led_dbg_crs_dv_fall_seen (FF)
+  Destination:       led_dbg_crs_dv_fall_seen (PAD)
+  Source Clock:      rmii_ref_clk rising
+
+  Data Path: led_dbg_crs_dv_fall_seen to led_dbg_crs_dv_fall_seen
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   0.765  led_dbg_crs_dv_fall_seen (dbg_frame_end_seen)
+     OBUF:I->O                 2.912          led_dbg_crs_dv_fall_seen_OBUF (led_dbg_crs_dv_fall_seen)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock rmii_ref_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+rmii_ref_clk   |    4.478|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.83 secs
+ 
+--> 
+
+
+Total memory usage is 489244 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  375 (   0 filtered)
+Number of infos    :   28 (   0 filtered)
+
