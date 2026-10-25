@@ -1,4 +1,4 @@
-### Things to include in report:
+### Things to (potentially) include in report:
 
 - Information about the FPGA board (Mimas V2), its specifications, ports etc. x
 - Information about the Spartan 6 FPGA chip (XC6SLX9-2CSG324C), its logic units, LUTs, Voltage etc. x
@@ -12,8 +12,7 @@
 - Timing diagrams
 
 Things to do NOW:
-- Dashboard
---Disable seven segment
--- Laptop setup for attacks and testing
--- Upload everything to github
-- Report & Logbook
+- Properly set up the website so that it tracks packets and alerts properly
+- Test various attacks from laptop to laptop
+- Make Report, Logbook and PPT
+- Take video of the project
