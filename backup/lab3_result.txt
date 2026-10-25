@@ -1,0 +1,134 @@
+--- window 1 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 2 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 3 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 4 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 5 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 6 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 7 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 8 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 9 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 10 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 11 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 12 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 13 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 14 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 15 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 16 closed: peak est  syn=0 scan=0 icmp=1 udp=0
+--- window 17 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 18 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+t=  18.911s  SCAN           sev=2 flags=0000000010  192.168.0.107 -> 192.168.0.106  reason=18 metric=64          
+t=  18.944s  SYN_FLOOD      sev=2 flags=0000000001  192.168.0.107 -> 192.168.0.106  reason=17 metric=200          
+--- window 19 closed: peak est  syn=425 scan=341 icmp=0 udp=0
+t=  18.999s  SYN_FLOOD      sev=2 flags=0000000011  192.168.0.107 -> 192.168.0.106  reason=17 metric=426          
+--- window 20 closed: peak est  syn=941 scan=471 icmp=0 udp=0
+--- window 21 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 22 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 23 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 24 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+t=  24.419s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  24.419s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  24.419s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  24.419s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 25 closed: peak est  syn=0 scan=10 icmp=0 udp=0
+t=  24.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=6 (summary)
+t=  25.520s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  25.520s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  25.520s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  25.521s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 26 closed: peak est  syn=0 scan=21 icmp=0 udp=0
+t=  25.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=46 (summary)
+t=  26.021s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  26.021s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  26.021s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  26.023s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 27 closed: peak est  syn=0 scan=53 icmp=0 udp=0
+t=  26.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=96 (summary)
+t=  27.022s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  27.022s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  27.023s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  27.024s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 28 closed: peak est  syn=0 scan=58 icmp=0 udp=0
+t=  27.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=96 (summary)
+t=  28.024s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  28.024s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  28.024s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  28.026s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 29 closed: peak est  syn=0 scan=58 icmp=0 udp=0
+t=  28.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=96 (summary)
+t=  29.026s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  29.026s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  29.026s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  29.028s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 30 closed: peak est  syn=0 scan=58 icmp=0 udp=0
+t=  29.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=36 (summary)
+--- window 31 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 32 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+t=  32.861s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  32.861s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  32.861s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  32.861s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 33 closed: peak est  syn=0 scan=10 icmp=0 udp=0
+t=  32.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=6 (summary)
+t=  33.962s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  33.962s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  33.962s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  33.965s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 34 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+t=  33.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=6 (summary)
+t=  34.062s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  34.062s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  34.062s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  34.062s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 35 closed: peak est  syn=0 scan=50 icmp=0 udp=0
+t=  34.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=96 (summary)
+t=  35.064s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  35.064s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  35.064s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  35.066s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 36 closed: peak est  syn=0 scan=56 icmp=0 udp=0
+t=  35.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=96 (summary)
+t=  36.065s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  36.065s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  36.065s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  36.067s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 37 closed: peak est  syn=0 scan=56 icmp=0 udp=0
+t=  36.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=96 (summary)
+t=  37.067s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  37.067s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  37.067s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+t=  37.069s  TCP_FLAGS      sev=2 flags=0010000000  192.168.0.107 -> 192.168.0.106  reason=24 metric=60          
+--- window 38 closed: peak est  syn=0 scan=56 icmp=0 udp=0
+t=  37.998s  TCP_FLAGS      sev=2 flags=1010000000  0.0.0.0 -> 0.0.0.0  reason=64 metric=76 (summary)
+--- window 39 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 40 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 41 closed: peak est  syn=127 scan=1 icmp=0 udp=0
+t=  41.086s  SYN_FLOOD      sev=2 flags=0000000001  192.168.0.107 -> 192.168.0.106  reason=17 metric=200          
+--- window 42 closed: peak est  syn=943 scan=0 icmp=0 udp=0
+t=  41.998s  SYN_FLOOD      sev=2 flags=0000000001  192.168.0.107 -> 192.168.0.106  reason=17 metric=944          
+--- window 43 closed: peak est  syn=948 scan=0 icmp=0 udp=0
+t=  42.998s  SYN_FLOOD      sev=2 flags=0000000001  192.168.0.107 -> 192.168.0.106  reason=17 metric=945          
+--- window 44 closed: peak est  syn=948 scan=0 icmp=0 udp=0
+t=  43.998s  SYN_FLOOD      sev=2 flags=0000000001  192.168.0.107 -> 192.168.0.106  reason=17 metric=944          
+--- window 45 closed: peak est  syn=947 scan=0 icmp=0 udp=0
+--- window 46 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 47 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 48 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 49 closed: peak est  syn=0 scan=0 icmp=57 udp=0
+--- window 50 closed: peak est  syn=0 scan=0 icmp=440 udp=0
+--- window 51 closed: peak est  syn=0 scan=0 icmp=458 udp=0
+--- window 52 closed: peak est  syn=0 scan=0 icmp=461 udp=0
+--- window 53 closed: peak est  syn=0 scan=0 icmp=469 udp=0
+--- window 54 closed: peak est  syn=0 scan=0 icmp=469 udp=0
+--- window 55 closed: peak est  syn=0 scan=0 icmp=464 udp=0
+--- window 56 closed: peak est  syn=0 scan=0 icmp=465 udp=0
+--- window 57 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 58 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 59 closed: peak est  syn=0 scan=0 icmp=0 udp=1304
+t=  59.444s  UDP_FLOOD      sev=2 flags=0001000000  192.168.0.107 -> 192.168.0.106  reason=20 metric=2000          
+--- window 60 closed: peak est  syn=0 scan=0 icmp=0 udp=2854
+t=  59.997s  UDP_FLOOD      sev=2 flags=0001000000  192.168.0.107 -> 192.168.0.106  reason=20 metric=2850          
+--- window 61 closed: peak est  syn=0 scan=0 icmp=0 udp=2862
+--- window 62 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+--- window 63 closed: peak est  syn=0 scan=0 icmp=0 udp=0
+=== done: packets=21208 alerts=69 dropped=0 worst-clocks/pkt=26
+nids_replay_tb.v:84: $finish called at 1273000250000 (1ps)
