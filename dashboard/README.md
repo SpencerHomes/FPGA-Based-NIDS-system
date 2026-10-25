@@ -1,129 +1,57 @@
-# 🛡️ Spartan-6 FPGA Network Intrusion Detection System (NIDS) Dashboard
+# SENTINEL — FPGA NIDS live dashboard
 
-A real-time, hardware-accelerated Network Intrusion Detection System (NIDS) web dashboard built on **Streamlit**. Designed to monitor wire-speed packet processing from a **Xilinx Spartan-6 FPGA** and edge ingestion on a **Raspberry Pi**.
+A minimal local website and Python UART receiver for monitoring FPGA NIDS alerts.
+The website uses Python's standard-library HTTP server; only `pyserial` is needed for real serial hardware.
 
----
+## Windows setup
 
-## 📌 Project Architecture & Data Pipeline
+1. Install Python 3.10 or newer and ensure the `py` launcher works.
+2. Extract the project ZIP.
+3. Double-click `run_dashboard.bat`.
+4. Open **http://127.0.0.1:5000** in your browser.
+5. In **Input connection**, select Hardware UART, enter/select the correct serial port (for example `COM3`), and click **Apply input**. You can choose Demo events to preview the interface without hardware.
 
-The data pipeline flows across four distinct engineering phases:
+Keep the terminal window open. Press `Ctrl+C` in that window to stop the dashboard.
 
-```text
-[ Raw Ethernet PHY ]
-        │  (Raw electrical pulses: 1s & 0s)
-        ▼
-┌────────────────────────────────────────────────────────┐
-│ Phase 1: Packet Ingestion (Vikrant's Focus)            │
-│ - verilog-ethernet MAC strips Preamble & FCS           │
-│ - Pure Ethernet frames converted to AXI-Stream bus     │
-└────────────────────────────────────────────────────────┘
-        │  (AXI-Stream 8-bit/32-bit @ 100MHz clock)
-        ▼
-┌────────────────────────────────────────────────────────┐
-│ Phase 2: Detection Core (Krushna's Focus)              │
-│ - Hardware packet_parser extracts IP, Port, TCP flags  │
-│ - Testbench Verified: IPv4=1, TCP=1, Port 80, SYN=0x02 │
-│ - Rule Engine evaluates SYN flood / port scan attacks  │
-└────────────────────────────────────────────────────────┘
-        │  (Triggered Attack Alert Signal)
-        ▼
-┌────────────────────────────────────────────────────────┐
-│ Phase 3: UART Serializer (Krushna & Vikrant)           │
-│ - Compact JSON Alert Generator prevents link saturation│
-│ - Formats: {"type":"SYN_FLOOD","src":"...",...}       │
-│ - uart_tx module transmits at 115,200 baud             │
-└────────────────────────────────────────────────────────┘
-        │  (Physical UART / GPIO / USB-UART bridge)
-        ▼
-┌────────────────────────────────────────────────────────┐
-│ Phase 4: Edge Ingestion & Web Dashboard (Adv's Focus)  │
-│ - Raspberry Pi pyserial background listener            │
-│ - Streamlit Dashboard: Real-time telemetry & timelog   │
-│ - Metrics: Latency, Throughput, UART load, Audit log   │
-└────────────────────────────────────────────────────────┘
-```
-
----
-
-## ✨ Features of the Dashboard
-
-1. **System Health & Topology Tracker**: Live status of Spartan-6 PHY/MAC, AXI-Stream bus, Parser Core, UART Serializer, and Raspberry Pi Edge Server.
-2. **Key Performance Indicators (KPIs)**:
-   - **Achievable Ingress Throughput**: Wire rate in Mbps and Kpps (e.g. 50–90 Mbps on 100M PHY).
-   - **Hardware Core Latency**: ~0.18 µs (~18 clock cycles @ 100 MHz clock).
-   - **End-to-End Latency**: ~7.4 ms (including 115200 baud UART link + Pi decode).
-   - **UART Bus Saturation**: Live gauge of the 115,200 bps link capacity.
-3. **Live Alert Notifications**: Flashing warning banner with extracted IP, destination port, TCP flags (`0x02 SYN`), severity, and mitigation action.
-4. **Interactive Telemetry Visualizations**:
-   - Real-time Network Ingress & Packet Rate (Dual-axis time-series).
-   - Threat Classification Breakdown (Donut chart).
-   - Top Targeted Destination Ports & Attacker IPs.
-   - Latency Composition across pipeline stages.
-5. **Security Event Timelog & Audit Ledger**:
-   - Filter by IP address, Attack Type, Severity, and Time.
-   - One-click export to **CSV** and **JSON**.
-6. **Dual Data Modes**:
-   - **Simulation Engine (Default)**: Test all UI features, graphs, and alert feeds instantly with zero hardware connected.
-   - **Live Hardware UART**: Connect directly to your USB-UART bridge (`COMx` on Windows or `/dev/ttyUSB0` on Raspberry Pi/Linux).
-7. **Interactive Attack Injector**: Trigger SYN Floods, Port Scans, UDP Blasts, and Malformed packets on demand from the sidebar.
-
----
-
-## 🚀 How to Run Locally
-
-### 1. Prerequisites
-Ensure you have Python 3.9+ installed.
-
-### 2. Install Dependencies
-Open a terminal in this project directory and run:
+## Linux setup
 
 ```bash
+cd nids_live_dashboard
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+python app.py
 ```
 
-*(Installed packages: `streamlit`, `pandas`, `plotly`, `pyserial`)*
+Open **http://127.0.0.1:5000**. For real hardware, use the correct device path, such as `/dev/ttyUSB0` or `/dev/ttyACM0`. On Linux, serial access may require membership in the `dialout` group. Only one program can normally open a serial port at a time.
 
-### 3. Launch the Dashboard
-Run the following command:
+## UART settings (fixed)
+
+The receiver uses **19200 baud, 8 data bits, no parity, 1 stop bit (8N1)**. Baud rate is fixed in `serial_listener.py` and cannot be changed from the website or configuration endpoint. The FPGA UART transmitter and USB-UART adapter must use the same settings.
+
+## Expected alert format
+
+The receiver expects UTF-8 JSON Lines: one JSON object per line, terminated with LF (`\n`) or CRLF (`\r\n`). Example:
+
+```json
+{"type":"SYN_FLOOD","severity":"CRITICAL","src":"192.168.1.44","dst":"192.168.1.10","dst_port":80,"protocol":"TCP","flags":"0x02"}
+{"type":"PORT_SCAN","src_ip":"10.0.0.23","dst_ip":"192.168.1.10","dst_port":443,"protocol":"TCP"}
+```
+
+Common aliases such as `alert_type`, `source_ip`, `dest_ip`, `destination_port`, `proto`, and an object nested under `alert` or `data` are supported. Unknown alert names stay visible as `UNCLASSIFIED`. Explicit valid severity provided by the sender takes precedence over the dashboard's display mapping. Missing source/destination fields remain blank; the dashboard does not fill them with fictional values.
+
+If the FPGA sends binary bytes, a fixed-width record, or a different delimiter rather than JSON Lines, this parser must be adapted to the actual UART transmitter format. This application only displays the alert claims it receives; it does not prove the FPGA detected or blocked an attack.
+
+## Board heartbeat handling
+
+The receiver recognizes the board heartbeat signature `{"t":2,"st":"ALIVE", ...}` (also shown with version, message ID, uptime field, and CRC in the raw payload). It displays this as **Board Heartbeat** with **INFO** severity rather than an unclassified security alert. The header reports the UART connection separately from board health. With a heartbeat arriving about every two seconds, the board is considered online while a heartbeat was seen in the last six seconds; after that it reports **Heartbeat lost**. In demo mode, hardware heartbeat health is explicitly not measured.
+
+The event stream severity filter is a multi-select checklist. **Clear all** clears the currently retained event history while leaving UART reception and current board heartbeat health running.
+
+## Run tests
 
 ```bash
-streamlit run app.py
+python -m unittest -v
 ```
 
-Streamlit will automatically open your default browser to:
-```
-http://localhost:8501
-```
-
----
-
-## 🔌 Connecting to Physical Hardware (Phase 4 Integration)
-
-When testing with the actual Spartan-6 FPGA connected to your laptop or Raspberry Pi:
-
-1. Connect the FPGA's UART TX pin (via USB-to-UART converter, e.g., CP2102 or FT232R) to your computer's USB port.
-2. In the Dashboard sidebar:
-   - Select **Live Hardware UART**.
-   - Choose your COM port (e.g., `COM3`, `COM4` on Windows, or `/dev/ttyUSB0` on Linux/Raspberry Pi).
-   - Verify the baud rate is set to **115200**.
-   - Click **Connect Hardware Link**.
-3. When Krushna's FPGA parser detects an intrusion, the JSON alert will be rendered instantly on the screen!
-
-### Testing UART Without FPGA Board
-You can simulate the FPGA's physical UART transmissions using the included simulator script:
-```bash
-python simulate_fpga_uart.py --port COM4 --baud 115200
-```
-Or simply run it in terminal mode:
-```bash
-python simulate_fpga_uart.py
-```
-
----
-
-## 📊 Metric Calculation Rationale
-
-- **Achievable Throughput**: A Spartan-6 Ethernet MAC can parse packets at wire speed. On a 100M PHY, maximum theoretical frame rate is ~148.8 Kpps (64-byte frames). Realistically, mixed-size network traffic yields **40–90 Mbps** and **40–80 Kpps**, which this dashboard tracks accurately.
-- **Why UART Bottleneck Matters**: A 115,200 baud serial connection transfers `11,520 bytes/sec`. A 65-byte JSON alert takes:
-  $$\text{Latency}_{\text{UART}} = \frac{65 \times 10 \text{ bits}}{115,200 \text{ bps}} \approx 5.64 \text{ ms}$$
-  The dashboard explicitly highlights this latency trade-off to demonstrate why filtering at the hardware layer is essential.
+The dashboard retains the latest 1,000 alerts in memory. Use **Export JSON** to save the currently retained events. **Clear all** clears the current alert history after browser confirmation; serial reception continues, so newly received alerts appear normally. Parser error and UART byte/line counters are not reset. History also clears when the app exits. By default, the web server binds only to `127.0.0.1` and is not exposed to the LAN.

@@ -1,4 +1,2 @@
-streamlit>=1.30.0
-pandas>=2.0.0
-plotly>=5.18.0
-pyserial>=3.5
+# Optional for Simulation mode; required to read real UART serial data.
+pyserial>=3.5,<4.0

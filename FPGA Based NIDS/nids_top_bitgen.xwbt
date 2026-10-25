@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/MimasV2-shared/test/nids/nids_top.ncd
+OUTFILE=/home/ise/MimasV2-shared/test/nids/nids_top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=/home/ise/MimasV2-shared/test/nids
+LICENSE=WebPack
+USER_INFO=214097265_0_0_077
