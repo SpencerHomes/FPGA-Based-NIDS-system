@@ -1,3 +1,0 @@
-verilog isim_temp "rtl/ethernet_rx.v"
-verilog isim_temp "tb/tb_ethernet_rx.v"
-verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
