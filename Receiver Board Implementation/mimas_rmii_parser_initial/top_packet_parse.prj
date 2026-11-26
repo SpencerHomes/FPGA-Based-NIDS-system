@@ -1,4 +1,0 @@
-verilog work "rtl/rmii_rx.v"
-verilog work "rtl/packet_parser.v"
-verilog work "rtl/ethernet_rx.v"
-verilog work "rtl/top_packet_parse.v"

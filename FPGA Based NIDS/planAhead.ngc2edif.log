@@ -1,0 +1,22 @@
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design nids_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to nids_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   u_uart/Madd_idx[7]_GND_7_o_add_60_OUT_cy<5 : 3> on block nids_top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus u_fifo_b2a/cptr_r<7 : 0> on block
+   nids_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus u_fifo_b2a/rptr_w<8 : 6> on block
+   nids_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus u_fifo_a2b/cptr_r<7 : 0> on block
+   nids_top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus u_fifo_a2b/rptr_w<8 : 6> on block
+   nids_top is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file nids_top.edif ...
+ngc2edif: Total memory usage is 107860 kilobytes
+

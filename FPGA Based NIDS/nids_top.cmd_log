@@ -1,0 +1,87 @@
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+netgen -intstyle ise -s 2  -pcf nids_top.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim nids_top.ncd nids_top_timesim.v 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf -ucf mimas_v2_nids.ucf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc files/mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc files/mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc files/mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc files/mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 
+xst -intstyle ise -ifn "/home/ise/MimasV2-shared/test/nids/nids_top.xst" -ofn "/home/ise/MimasV2-shared/test/nids/nids_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc files/mimas_v2_nids.ucf -p xc6slx9-csg324-2 nids_top.ngc nids_top.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o nids_top_map.ncd nids_top.ngd nids_top.pcf 
+par -w -intstyle ise -ol high -mt off nids_top_map.ncd nids_top.ncd nids_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml nids_top.twx nids_top.ncd -o nids_top.twr nids_top.pcf 
+bitgen -intstyle ise -f nids_top.ut nids_top.ncd 

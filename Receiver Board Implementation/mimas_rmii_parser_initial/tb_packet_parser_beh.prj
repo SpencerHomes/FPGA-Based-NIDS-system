@@ -1,3 +1,0 @@
-verilog work "rtl/packet_parser.v"
-verilog work "tb/tb_packet_parser.v"
-verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

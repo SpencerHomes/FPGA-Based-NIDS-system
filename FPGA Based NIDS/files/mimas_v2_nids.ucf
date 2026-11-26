@@ -1,0 +1,64 @@
+# =============================================================================
+# mimas_v2_nids.ucf - Mimas V2 / Spartan-6 XC6SLX9-2CSG324
+# RMII pin assignments translated from 1-based expansion-header pin numbers
+# to the corresponding FPGA package LOCs in the supplied Mimas V2 board UCF.
+# =============================================================================
+
+# ---------------- 100 MHz master oscillator ----------------------------------
+NET "clk_100" LOC = V10 | IOSTANDARD = LVCMOS33;
+NET "clk_100" TNM_NET = "clk_100";
+TIMESPEC TS_clk_100 = PERIOD "clk_100" 10 ns HIGH 50%;
+
+# ---------------- FT2232 USB-UART (FPGA TX -> PC) ----------------------------
+NET "uart_txd" LOC = B8 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW;
+
+# ---------------- PHY_A (Attacker) RMII --------------------------------------
+# User header assignment: TX1=P8.2, TX0=P9.1, TX_EN=P9.2,
+# RX1=P9.3, RX0=P9.4, CRS=P9.5, REFCLK=P9.6, MDC=P9.7, MDIO=P9.8.
+NET "phy_a_txd<1>"   LOC = T11 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "phy_a_txd<0>"   LOC = H17 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "phy_a_tx_en"    LOC = H18 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "phy_a_rxd<1>"   LOC = J16 | IOSTANDARD = LVCMOS33;
+NET "phy_a_rxd<0>"   LOC = J18 | IOSTANDARD = LVCMOS33;
+NET "phy_a_crs_dv"   LOC = K15 | IOSTANDARD = LVCMOS33;
+NET "phy_a_ref_clk"  LOC = K16 | IOSTANDARD = LVCMOS33;
+#NET "phy_a_mdc"      LOC = L15 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "phy_a_mdio"     LOC = L16 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+# ---------------- PHY_B (Victim) RMII ----------------------------------------
+# User header assignment: TX1=P7.2, TX0=P6.1, TX_EN=P6.2,
+# RX1=P6.3, RX0=P6.4, CRS=P6.5, REFCLK=P6.6, MDC=P6.7, MDIO=P6.8.
+NET "phy_b_txd<1>"   LOC = V8 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "phy_b_txd<0>"   LOC = U7 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "phy_b_tx_en"    LOC = V7 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "phy_b_rxd<1>"   LOC = T4 | IOSTANDARD = LVCMOS33;
+NET "phy_b_rxd<0>"   LOC = V4 | IOSTANDARD = LVCMOS33;
+NET "phy_b_crs_dv"   LOC = U5 | IOSTANDARD = LVCMOS33;
+NET "phy_b_ref_clk"  LOC = V5 | IOSTANDARD = LVCMOS33;
+#NET "phy_b_mdc"      LOC = R3 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "phy_b_mdio"     LOC = T3 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+# ---------------- Allow REF_CLKs on non-GCLK header pins ---------------------
+NET "phy_a_ref_clk" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "phy_b_ref_clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# ---------------- Independent, unrelated PHY clock domains -------------------
+NET "phy_a_ref_clk" TNM_NET = "clk_a";
+TIMESPEC TS_clk_a = PERIOD "clk_a" 20 ns HIGH 50%;
+
+NET "phy_b_ref_clk" TNM_NET = "clk_b";
+TIMESPEC TS_clk_b = PERIOD "clk_b" 20 ns HIGH 50%;
+
+# ---------------- Clock-domain crossings are handled in RTL ------------------
+TIMESPEC TS_a2b   = FROM "clk_a"   TO "clk_b"   TIG;
+TIMESPEC TS_b2a   = FROM "clk_b"   TO "clk_a"   TIG;
+TIMESPEC TS_a2100 = FROM "clk_a"   TO "clk_100" TIG;
+TIMESPEC TS_100a  = FROM "clk_100" TO "clk_a"   TIG;
+TIMESPEC TS_b2100 = FROM "clk_b"   TO "clk_100" TIG;
+TIMESPEC TS_100b  = FROM "clk_100" TO "clk_b"   TIG;
+
+
+# To disable the Seven Segment Displays
+    NET "SevenSegmentEnable[2]"           LOC = B3  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;                              # Enables for Seven Segment
+    NET "SevenSegmentEnable[1]"           LOC = A2  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+    NET "SevenSegmentEnable[0]"           LOC = B2  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
