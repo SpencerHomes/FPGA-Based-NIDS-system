@@ -1,27 +1,7 @@
 `timescale 1ns/1ps
 // -----------------------------------------------------------------------------
-// FPGA NIDS metadata-based attack detector, v2 (Verilog-2001)
-//
-// Drop-in replacement for v1: same meta_* inputs, same alert_* stream (alert_flags
-// is widened 6 -> 10 bits; bits [5:0] keep their v1 meaning). Extra stat_* outputs.
-//
-// Why v2 exists (what v1 could not do on real traffic):
-//   * v1 tracked 16 victims / 8 scanner pairs in registers. Any traffic touching more
-//     keys than that exhausted the tables = silent blind spot. v2 uses count-min
-//     sketches + a Bloom filter in block RAM: bounded memory, no key-count limit.
-//   * v1 used a fixed one-second window, so a burst split across the boundary was missed.
-//     v2 uses a sliding estimate (current + decayed previous window).
-//   * v1 SYN rule fired on any busy server. v2 also checks that SYNs go unanswered
-//     (SYN vs SYN-ACK seen from the same host) unless the hard ceiling is exceeded.
-//   * v1 stalled the whole detector when the alert consumer (e.g. a UART) was slow and
-//     emitted one alert per fragment/malformed packet (self-DoS). v2 never stalls on
-//     the alert path: per-class rate limiting + summary records + drop counters.
-//   * Added: UDP flood, TCP flag anomalies (NULL/Xmas/SYN+FIN/SYN+RST/FIN-no-ACK scans),
-//     land attack / bogon source, tiny first fragment, horizontal+vertical scan metric.
-//
-// Processing is sequential (one packet at a time, ~30-60 clocks). At 100 Mbit/s the
-// minimum frame spacing is 336 clocks @ 50 MHz, so there is >5x headroom.
-// stat_max_proc_cycles reports the measured worst case.
+
+
 //
 // Alert flags:  [0] SYN flood  [1] scan  [2] ICMP echo flood  [3] malformed
 //               [4] fragment seen/anomaly  [5] system (alert queue overflow)
@@ -36,9 +16,7 @@
 //            19 ICMP rate, 20 UDP rate, 24 TCP flag anomaly (aux bitmap: 1 NULL, 2 Xmas,
 //            4 SYN+FIN, 8 SYN+RST, 16 FIN-no-ACK), 32 alert queue overflow (metric=dropped),
 //            40 land, 41 bogon source, 64 summary (metric = suppressed count in last window)
-//
-// Limits: thresholds must be <= 32767 (15-bit counters). WINDOW_CYCLES should be
-// >= ~4096 (a 2048-clock RAM sweep runs once per window).
+
 // -----------------------------------------------------------------------------
 module nids_attack_detector #(
     parameter integer WINDOW_CYCLES          = 50000000, // nominal window; 50 MHz -> 1 s
