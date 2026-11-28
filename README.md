@@ -4,25 +4,25 @@ We have built this project to monitor network traffic in our everyday life and i
 ## How to try it?
 
 ### Implementation with an FPGA can be done in the following way:
-1. Ethernet PHY Setup: Connect two LAN8720 Ethernet PHY modules to the FPGA. One PHY acts as the network input, while the other acts as the network output.
+**1. Ethernet PHY Setup:** Connect two LAN8720 Ethernet PHY modules to the FPGA. One PHY acts as the network input, while the other acts as the network output.
 
-2. RMII Interface Configuration: Configure the FPGA's RMII interfaces to communicate with both LAN8720 modules. Establish the required 50 MHz reference clock, reset and data signals.
+**2. RMII Interface Configuration:** Configure the FPGA's RMII interfaces to communicate with both LAN8720 modules. Establish the required 50 MHz reference clock, reset and data signals.
 
-3. Ethernet Frame Reception: Implement the receive logic in Verilog to reconstruct Ethernet frames from the incoming 2-bit RMII data stream.
+**3. Ethernet Frame Reception:** Implement the receive logic in Verilog to reconstruct Ethernet frames from the incoming 2-bit RMII data stream.
 
-4. Packet Parser Integration: Connect the Ethernet receiver to the packet parser, which extracts IPv4 addresses, transport protocols, port numbers and TCP flags.
+**4. Packet Parser Integration:** Connect the Ethernet receiver to the packet parser, which extracts IPv4 addresses, transport protocols, port numbers and TCP flags.
 
-5. Attack Detector Integration: Connect the parser's metadata output to the FPGA attack detection engine. Use a valid/ready handshake to transfer packet metadata reliably.
+**5. Attack Detector Integration:** Connect the parser's metadata output to the FPGA attack detection engine. Use a valid/ready handshake to transfer packet metadata reliably.
 
-6. Packet Forwarding: Implement Ethernet transmit logic to forward received frames through the second LAN8720 PHY, maintaining the inline network connection.
+**6. Packet Forwarding:** Implement Ethernet transmit logic to forward received frames through the second LAN8720 PHY, maintaining the inline network connection.
 
-7. Alert Communication: Connect the FPGA's alert output to a Raspberry Pi Zero 2 W through a suitable communication interface, such as UART.
+**7. Alert Communication:** Connect the FPGA's alert output to a Raspberry Pi Zero 2 W through a suitable communication interface, such as UART.
 
-8. Monitoring Dashboard: Configure the Raspberry Pi to receive alert records and display detected attacks, traffic statistics and other monitoring information.
+**8. Monitoring Dashboard:** Configure the Raspberry Pi to receive alert records and display detected attacks, traffic statistics and other monitoring information.
 
-9. FPGA Synthesis and Deployment: Apply the required pin constraints, synthesize the Verilog design using Xilinx ISE 14.7, verify timing and program the Spartan-6 FPGA.
+**9. FPGA Synthesis and Deployment:** Apply the required pin constraints, synthesize the Verilog design using Xilinx ISE 14.7, verify timing and program the Spartan-6 FPGA.
 
-10. System Testing: Connect the NIDS between two network devices and test packet forwarding, detection functionality and alert generation using normal and simulated attack traffic.
+**10. System Testing:** Connect the NIDS between two network devices and test packet forwarding, detection functionality and alert generation using normal and simulated attack traffic.
 
 **Note:** You can also simulate this project on your device without an FPGA, step to that is given below:
 
