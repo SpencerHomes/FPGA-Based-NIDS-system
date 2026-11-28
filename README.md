@@ -1,5 +1,5 @@
 ## System Architecture
-'''mermaid
+```mermaid
 flowchart
 	n1["network traffic"]
 	n2["RMII to LAN interface"]
@@ -52,4 +52,4 @@ flowchart
 	n27 --> n28
 	n27 --> n29
 	n27 --> n30
-  '''
+  ```
